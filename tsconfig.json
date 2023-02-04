@@ -11,7 +11,10 @@
     "allowJs": true,
     "moduleResolution": "node",
     // для абсолютного импорта
-//    "baseUrl": ".",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // Позволяет заменить common js импорты
     // const path = require('path'); --> import * as path from 'path';
     "esModuleInterop": true,
