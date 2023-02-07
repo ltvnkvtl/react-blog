@@ -20,6 +20,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
       buttonType={ButtonType.CLEAR}
       onClick={toggle}
     >
+      // TODO: create namespace for common
       {t('COMMON.CHANGE_LANG')}
     </Button>
   );
