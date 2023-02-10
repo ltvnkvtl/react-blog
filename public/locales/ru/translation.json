@@ -1,5 +1,6 @@
 {
   "COMMON": {
-    "CHANGE_LANG": "Изменить язык"
+    "CHANGE_LANG": "Изменить язык",
+    "PAGE_NOT_FOUND": "Страница не найдена"
   }
 }
