@@ -1,0 +1,9 @@
+{
+  "COMMON": {
+    "CHANGE_LANG": "Change language",
+    "PAGE_NOT_FOUND": "Page not found",
+    "RELOAD_PAGE": "Reload page",
+    "THROW_ERROR": "Throw error",
+    "UNEXPECTED_ERROR": "Unexpected error"
+  }
+}
