@@ -1,6 +1,9 @@
 {
   "COMMON": {
     "CHANGE_LANG": "Изменить язык",
-    "PAGE_NOT_FOUND": "Страница не найдена"
+    "PAGE_NOT_FOUND": "Страница не найдена",
+    "RELOAD_PAGE": "Перезагрузить страницу",
+    "THROW_ERROR": "Вызвать ошибку",
+    "UNEXPECTED_ERROR": "Непредвиденная ошибка"
   }
 }
