@@ -1,7 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Button, ButtonType } from './Button';
-import 'app/styles/index.scss'; // TODO: add decorator
 
 export default {
     title: 'shared/Button',
@@ -24,8 +23,8 @@ Clear.args = {
     buttonType: ButtonType.CLEAR,
 };
 
-export const Outlined = Template.bind({});
-Outlined.args = {
+export const Outline = Template.bind({});
+Outline.args = {
     children: 'Text',
     buttonType: ButtonType.OUTLINE,
 };

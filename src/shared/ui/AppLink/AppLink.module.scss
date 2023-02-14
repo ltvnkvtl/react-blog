@@ -9,3 +9,7 @@
 .secondary {
     color: var(--inverted-secondary-color);
 }
+
+.dangerous {
+    color: red; // TODO: add global variable
+}
