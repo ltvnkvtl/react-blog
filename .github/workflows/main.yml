@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - 'features/**'
+      - features/**
   pull_request:
     branches:
       - master
