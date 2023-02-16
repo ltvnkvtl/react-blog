@@ -9,10 +9,10 @@ on:
       - master
 jobs:
   Lint-Build-Test:
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
     strategy:
       matrix:
-        node-version: [ 17.x ]
+        node-version: [ 16.x ]
 
     steps:
       - uses: actions/checkout@v2
@@ -22,6 +22,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: install modules
         run: npm ci
+      - name: build storybook
+        run: npm run storybook:build
+      - name: screenshot testing
+        run: npm run test:screenshot:ci
       - name: build production project
         run: npm run build:prod
       - name: linting typescript
@@ -30,7 +34,4 @@ jobs:
         run: npm run lint:scss
       - name: unit testing
         run: npm run test:unit
-      - name: build storybook
-        run: npm run storybook:build
-      - name: screenshot testing
-        run: npm run test:screenshot:ci
+
