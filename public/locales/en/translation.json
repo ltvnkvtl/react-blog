@@ -4,11 +4,11 @@
     "PAGE_NOT_FOUND": "Page not found",
     "RELOAD_PAGE": "Reload page",
     "THROW_ERROR": "Throw error",
-    "UNEXPECTED_ERROR": "Unexpected error",
-    "TOGGLE": "Toggle"
+    "TOGGLE": "Toggle",
+    "UNEXPECTED_ERROR": "Unexpected error"
   },
   "ROUTES": {
-    "MAIN": "Main",
-    "ABOUT": "About"
+    "ABOUT": "About",
+    "MAIN": "Main"
   }
 }
