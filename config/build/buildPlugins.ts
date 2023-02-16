@@ -15,7 +15,7 @@ export function buildPlugins({ paths, isDev, analyzeBundle }: BuildOptions): web
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
         }),
-        new webpack.HotModuleReplacementPlugin(),
+        ...(isDev ? [new webpack.HotModuleReplacementPlugin()] : []),
         ...(analyzeBundle ? [new BundleAnalyzerPlugin()] : []),
     ];
 }
