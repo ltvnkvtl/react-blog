@@ -5,7 +5,8 @@ import cls from './AppLink.module.scss';
 
 export enum AppLinkType {
   PRIMARY = 'primary',
-  SECONDARY = 'secondary',
+  INVERTED = 'inverted',
+  DANGEROUS = 'dangerous',
 }
 
 interface AppLinkProps extends LinkProps {

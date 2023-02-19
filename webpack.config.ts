@@ -12,11 +12,13 @@ export default (env: BuildEnvironment) => {
     };
     const isDev = mode === 'development';
     const PORT = env.port || 3000;
+    const analyzeBundle = env.analyzeBundle === 'true';
 
     return buildWebpackConfig({
         mode,
         paths,
         isDev,
         port: PORT,
+        analyzeBundle,
     });
 };

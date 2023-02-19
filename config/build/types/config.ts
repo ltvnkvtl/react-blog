@@ -10,6 +10,7 @@ export interface BuildPaths {
 export interface BuildEnvironment {
   mode: BuildMode;
   port: number;
+  analyzeBundle: string;
 }
 
 export interface BuildOptions {
@@ -17,4 +18,5 @@ export interface BuildOptions {
   paths: BuildPaths;
   isDev: boolean;
   port: number;
+  analyzeBundle: boolean;
 }
