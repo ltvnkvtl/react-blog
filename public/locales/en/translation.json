@@ -4,8 +4,8 @@
     "PAGE_NOT_FOUND": "Page not found",
     "RELOAD_PAGE": "Reload page",
     "THROW_ERROR": "Throw error",
-    "TOGGLE": "Toggle",
-    "UNEXPECTED_ERROR": "Unexpected error"
+    "UNEXPECTED_ERROR": "Unexpected error",
+    "CHANGE_LANG_SHORT": "En"
   },
   "ROUTES": {
     "ABOUT": "About",

@@ -4,9 +4,10 @@ import { Button, ButtonType } from 'shared/ui/Button/Button';
 
 interface LangSwitcherProps {
   className?: string;
+  short?: boolean;
 }
 
-export const LangSwitcher = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher = ({ className, short }: LangSwitcherProps) => {
     const { t, i18n } = useTranslation();
 
     const toggle = async () => {
@@ -19,8 +20,7 @@ export const LangSwitcher = ({ className }: LangSwitcherProps) => {
             buttonType={ButtonType.CLEAR}
             onClick={toggle}
         >
-            {/* TODO: create namespace for common */}
-            {t('COMMON.CHANGE_LANG')}
+            {t(short ? 'COMMON.CHANGE_LANG_SHORT' : 'COMMON.CHANGE_LANG')}
         </Button>
     );
 };
