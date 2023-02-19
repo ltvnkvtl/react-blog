@@ -21,10 +21,10 @@ Primary.args = {
     type: AppLinkType.PRIMARY,
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Inverted = Template.bind({});
+Inverted.args = {
     children: 'Text',
-    type: AppLinkType.SECONDARY,
+    type: AppLinkType.INVERTED,
 };
 
 export const Dangerous = Template.bind({});
