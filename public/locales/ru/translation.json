@@ -1,11 +1,12 @@
 {
   "COMMON": {
     "CHANGE_LANG": "Изменить язык",
+    "CHANGE_LANG_SHORT": "Ru",
+    "LOGIN": "Войти",
     "PAGE_NOT_FOUND": "Страница не найдена",
     "RELOAD_PAGE": "Перезагрузить страницу",
     "THROW_ERROR": "Вызвать ошибку",
-    "UNEXPECTED_ERROR": "Непредвиденная ошибка",
-    "CHANGE_LANG_SHORT": "Ru"
+    "UNEXPECTED_ERROR": "Непредвиденная ошибка"
   },
   "ROUTES": {
     "ABOUT": "О сайте",

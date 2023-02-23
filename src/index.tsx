@@ -4,6 +4,7 @@ import { ThemeProvider } from 'app/providers/theme';
 import { ErrorBoundary } from 'app/providers/ErrorBoundary';
 import App from './app/App';
 import 'shared/conig/i18n/i18n';
+import 'app/styles/index.scss';
 
 render(
     <BrowserRouter>

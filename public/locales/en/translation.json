@@ -1,11 +1,12 @@
 {
   "COMMON": {
     "CHANGE_LANG": "Change language",
+    "CHANGE_LANG_SHORT": "En",
+    "LOGIN": "Login",
     "PAGE_NOT_FOUND": "Page not found",
     "RELOAD_PAGE": "Reload page",
     "THROW_ERROR": "Throw error",
-    "UNEXPECTED_ERROR": "Unexpected error",
-    "CHANGE_LANG_SHORT": "En"
+    "UNEXPECTED_ERROR": "Unexpected error"
   },
   "ROUTES": {
     "ABOUT": "About",
