@@ -13,13 +13,6 @@ export const parameters = {
             date: /Date$/,
         },
     },
-    // themes: {
-    //     default: 'light',
-    //     list: [
-    //         { name: 'light', class: 'app_light_theme', color: '#a2a4a4' },
-    //         { name: 'dark', class: 'app_dark_theme', color: '#06378d' },
-    //     ],
-    // },
 };
 
 addDecorator(i18nDecorator); // TODO: fix storybook i18nDecorator
