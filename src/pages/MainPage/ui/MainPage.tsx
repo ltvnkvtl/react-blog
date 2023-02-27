@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { BugButton } from 'app/providers/ErrorBoundary';
-import { Counter } from 'entities/Counter';
 
 const MainPage = () => {
     const { t } = useTranslation('main');
@@ -9,7 +8,7 @@ const MainPage = () => {
         <div>
             <BugButton />
             {t('main:MAIN.TITLE')}
-            <Counter />
+            {/* <Counter /> for redux configuration */}
         </div>
     );
 };
