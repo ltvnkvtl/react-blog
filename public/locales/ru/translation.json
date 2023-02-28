@@ -8,6 +8,10 @@
     "THROW_ERROR": "Вызвать ошибку",
     "UNEXPECTED_ERROR": "Непредвиденная ошибка"
   },
+  "LOGIN_FORM": {
+    "ENTER_PASSWORD": "Введите пароль",
+    "ENTER_USERNAME": "Введите логин"
+  },
   "ROUTES": {
     "ABOUT": "О сайте",
     "MAIN": "Главная"

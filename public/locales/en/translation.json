@@ -8,6 +8,10 @@
     "THROW_ERROR": "Throw error",
     "UNEXPECTED_ERROR": "Unexpected error"
   },
+  "LOGIN_FORM": {
+    "ENTER_PASSWORD": "Enter password",
+    "ENTER_USERNAME": "Enter username"
+  },
   "ROUTES": {
     "ABOUT": "About",
     "MAIN": "Main"
