@@ -6,3 +6,4 @@ node_modules
 .loki/difference
 .loki/report.html
 .loki/report.json
+.husky/_
