@@ -13,16 +13,9 @@ export const parameters = {
             date: /Date$/,
         },
     },
-    themes: {
-        default: 'light',
-        list: [
-            { name: 'light', class: '', color: '#a2a4a4' },
-            { name: 'dark', class: 'dark', color: '#06378d' },
-        ],
-    },
 };
 
-addDecorator(i18nDecorator); // TODO: fix storybook i18nDecorator
+addDecorator(i18nDecorator);
 addDecorator(styleDecorator);
-addDecorator(RouteDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
+addDecorator(RouteDecorator);

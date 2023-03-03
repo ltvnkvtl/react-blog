@@ -1,5 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ThemeDecorator } from 'shared/conig/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/theme';
 import { Button, ButtonSize, ButtonType } from './Button';
 
 export default {
@@ -23,6 +25,12 @@ Clear.args = {
     buttonType: ButtonType.CLEAR,
 };
 
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
+    children: 'Text',
+    buttonType: ButtonType.CLEAR_INVERTED,
+};
+
 export const OutlineSizeM = Template.bind({});
 OutlineSizeM.args = {
     children: 'Text',
@@ -42,6 +50,13 @@ OutlineSizeXL.args = {
     buttonType: ButtonType.OUTLINE,
     size: ButtonSize.XL,
 };
+
+export const OutlineDark = Template.bind({});
+OutlineDark.args = {
+    children: 'Text',
+    buttonType: ButtonType.OUTLINE,
+};
+OutlineDark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const Background = Template.bind({});
 Background.args = {
@@ -77,4 +92,19 @@ SquareSizeXL.args = {
     buttonType: ButtonType.BACKGROUND_INVERTED,
     square: true,
     size: ButtonSize.XL,
+};
+
+export const SquareDark = Template.bind({});
+SquareDark.args = {
+    children: '>',
+    buttonType: ButtonType.BACKGROUND_INVERTED,
+    square: true,
+};
+SquareDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: '>',
+    buttonType: ButtonType.OUTLINE,
+    disabled: true,
 };

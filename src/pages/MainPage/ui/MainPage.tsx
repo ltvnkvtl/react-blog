@@ -8,6 +8,7 @@ const MainPage = () => {
         <div>
             <BugButton />
             {t('main:MAIN.TITLE')}
+            {/* <Counter /> for redux configuration */}
         </div>
     );
 };

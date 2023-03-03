@@ -1,5 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ThemeDecorator } from 'shared/conig/storybook/ThemeDecorator/ThemeDecorator';
+import { Theme } from 'app/providers/theme';
 import { PageError } from './PageError';
 
 export default {
@@ -14,3 +16,7 @@ const Template: ComponentStory<typeof PageError> = (args) => <PageError {...args
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const Dark = Template.bind({});
+Dark.args = {};
+Dark.decorators = [ThemeDecorator(Theme.DARK)];

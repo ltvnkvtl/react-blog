@@ -11,5 +11,5 @@
 }
 
 .dangerous {
-    color: red; // TODO: add global variable
+    color: var(--red-light);
 }

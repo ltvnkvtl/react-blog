@@ -8,10 +8,21 @@ i18next
     .use(I18nextBrowserLanguageDetector)
     .use(initReactI18next)
     .init({
-        fallbackLng: 'ru',
+        fallbackLng: 'en',
         debug: __IS_DEV__,
         backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json',
+            loadPath: () => {
+                const isStorybook = window.location.pathname.includes('storybook-static');
+                return isStorybook
+                    ? '/storybook-static/locales/{{lng}}/{{ns}}.json'
+                    : '/locales/{{lng}}/{{ns}}.json';
+            },
+        },
+        interpolation: {
+            escapeValue: false,
+        },
+        react: {
+            useSuspense: false,
         },
     });
 
