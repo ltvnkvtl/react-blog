@@ -101,3 +101,10 @@ SquareDark.args = {
     square: true,
 };
 SquareDark.decorators = [ThemeDecorator(Theme.DARK)];
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+    children: '>',
+    buttonType: ButtonType.OUTLINE,
+    disabled: true,
+};

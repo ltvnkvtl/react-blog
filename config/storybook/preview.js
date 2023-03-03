@@ -15,7 +15,7 @@ export const parameters = {
     },
 };
 
-addDecorator(i18nDecorator); // TODO: fix storybook i18nDecorator
+addDecorator(i18nDecorator);
 addDecorator(styleDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
 addDecorator(RouteDecorator);

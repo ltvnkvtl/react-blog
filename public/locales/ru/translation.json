@@ -3,14 +3,17 @@
     "CHANGE_LANG": "Изменить язык",
     "CHANGE_LANG_SHORT": "Ru",
     "LOGIN": "Войти",
+    "LOGOUT": "Выйти",
     "PAGE_NOT_FOUND": "Страница не найдена",
     "RELOAD_PAGE": "Перезагрузить страницу",
     "THROW_ERROR": "Вызвать ошибку",
     "UNEXPECTED_ERROR": "Непредвиденная ошибка"
   },
   "LOGIN_FORM": {
+    "AUTH_FORM_TITLE": "Форма авторизации",
     "ENTER_PASSWORD": "Введите пароль",
-    "ENTER_USERNAME": "Введите логин"
+    "ENTER_USERNAME": "Введите логин",
+    "WRONG_NAME_OR_USER": "Вы ввели неверный логин или пароль"
   },
   "ROUTES": {
     "ABOUT": "О сайте",

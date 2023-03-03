@@ -3,14 +3,17 @@
     "CHANGE_LANG": "Change language",
     "CHANGE_LANG_SHORT": "En",
     "LOGIN": "Login",
+    "LOGOUT": "Logout",
     "PAGE_NOT_FOUND": "Page not found",
     "RELOAD_PAGE": "Reload page",
     "THROW_ERROR": "Throw error",
     "UNEXPECTED_ERROR": "Unexpected error"
   },
   "LOGIN_FORM": {
+    "AUTH_FORM_TITLE": "Authorization form",
     "ENTER_PASSWORD": "Enter password",
-    "ENTER_USERNAME": "Enter username"
+    "ENTER_USERNAME": "Enter username",
+    "WRONG_NAME_OR_USER": "You have entered an incorrect username or password"
   },
   "ROUTES": {
     "ABOUT": "About",
