@@ -12,6 +12,7 @@ i18next
         debug: __IS_DEV__,
         backend: {
             loadPath: () => {
+                // TODO: problems with ci load languages for storybook
                 const isStorybook = window.location.pathname.includes('storybook-static');
                 return isStorybook
                     ? '/storybook-static/locales/{{lng}}/{{ns}}.json'
