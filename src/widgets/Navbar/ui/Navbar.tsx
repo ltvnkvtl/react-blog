@@ -29,6 +29,7 @@ export const Navbar = ({ className }: NavbarProps) => {
         dispatch(userActions.logout());
     }, [dispatch]);
 
+    // TODO: improve. problems with close modal animation on login
     if (authData) {
         return (
             <div className={classNames(cls.Navbar, {}, [className])}>
