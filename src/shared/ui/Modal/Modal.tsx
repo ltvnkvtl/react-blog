@@ -34,14 +34,6 @@ export const Modal = (props: ModalProps) => {
         [cls.isClosing]: isClosing,
     };
 
-    useEffect(() => {
-        if (isOpen) {
-            setIsMounted(true);
-        }
-
-        return () => setIsMounted(false);
-    }, [isOpen]);
-
     const closeHandler = useCallback(() => {
         if (onClose) {
             setIsClosing(true);
@@ -60,6 +52,7 @@ export const Modal = (props: ModalProps) => {
 
     useEffect(() => {
         if (isOpen) {
+            setIsMounted(true);
             timerRef.current = setTimeout(() => {
                 setIsOpening(true);
             }, 0);
@@ -69,6 +62,7 @@ export const Modal = (props: ModalProps) => {
         }
 
         return () => {
+            setIsMounted(false);
             setIsOpening(false);
             clearTimeout(timerRef.current);
         };
