@@ -17,6 +17,7 @@
   },
   "ROUTES": {
     "ABOUT": "About",
-    "MAIN": "Main"
+    "MAIN": "Main",
+    "PROFILE": "Profile"
   }
 }
