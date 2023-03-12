@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "strict": true,
     "outDir": "./dist/",
     // надо явно определить тип (даже если это any). без типов - нельзя
     "noImplicitAny": true,
