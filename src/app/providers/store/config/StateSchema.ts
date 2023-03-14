@@ -4,7 +4,7 @@ import { LoginSchema } from 'features/AuthByUsername';
 import {
     AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
 } from '@reduxjs/toolkit';
-import { ProfileSchema } from 'entities/Profile';
+import { ProfileSchema } from 'features/EditableProfileCard';
 import { AxiosInstance } from 'axios';
 import { NavigateFunction } from 'react-router/dist/lib/hooks';
 

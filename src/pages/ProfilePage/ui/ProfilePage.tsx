@@ -3,9 +3,13 @@ import { useTranslation } from 'react-i18next';
 import {
     DynamicModuleLoader, ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { fetchProfileData, ProfileCard, profileReducer } from 'entities/Profile';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useEffect } from 'react';
+import {
+    EditableProfileCard,
+    fetchProfileData,
+    profileReducer,
+} from 'features/EditableProfileCard';
 
 const reducers: ReducersList = {
     profile: profileReducer,
@@ -29,7 +33,7 @@ const ProfilePage = (props: ProfilePageProps) => {
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <div className={classNames('', {}, [className])}>
-                <ProfileCard />
+                <EditableProfileCard />
             </div>
         </DynamicModuleLoader>
     );
