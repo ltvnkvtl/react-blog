@@ -11,6 +11,7 @@ export interface BuildEnvironment {
   mode: BuildMode;
   port: number;
   analyzeBundle: string;
+  apiUrl: string;
 }
 
 export interface BuildOptions {
@@ -19,4 +20,5 @@ export interface BuildOptions {
   isDev: boolean;
   port: number;
   analyzeBundle: boolean;
+  apiUrl: string;
 }

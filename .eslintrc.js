@@ -53,9 +53,11 @@ module.exports = {
         'jsx-a11y/click-events-have-key-events': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
+        'no-undef': 'off',
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
     },
     overrides: [
         {
@@ -66,8 +68,8 @@ module.exports = {
             },
         },
         {
-            files: ['src/**/*Slice.ts'],
-            rules: { 'no-param-reassign': ['error', { props: false }] },
+            files: ['src/**/*Slice.ts', 'reducerManager.ts'],
+            rules: { 'no-param-reassign': 'off' },
         },
     ],
 };

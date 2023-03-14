@@ -1,0 +1,12 @@
+{
+  "PROFILE": {
+    "TITLE": "Profile",
+    "EDIT": "Edit",
+    "YOUR_NAME": "Your name",
+    "YOUR_SURNAME": "Your surname",
+    "ERRORS": {
+      "FAILED_TO_DOWNLOAD": "Failed to download profile",
+      "RELOAD_PAGE": "Please reload page"
+    }
+  }
+}
