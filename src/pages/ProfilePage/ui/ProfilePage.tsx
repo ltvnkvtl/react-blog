@@ -10,6 +10,7 @@ import {
     fetchProfileData,
     profileReducer,
 } from 'features/EditableProfileCard';
+import { ProfilePageHeader } from '../ui/ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
     profile: profileReducer,
@@ -33,6 +34,7 @@ const ProfilePage = (props: ProfilePageProps) => {
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
             <div className={classNames('', {}, [className])}>
+                <ProfilePageHeader />
                 <EditableProfileCard />
             </div>
         </DynamicModuleLoader>

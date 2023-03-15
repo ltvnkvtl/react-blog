@@ -46,24 +46,16 @@ export const ProfileCard = (props: ProfileCardProps) => {
 
     return (
         <div className={classNames(cls.ProfileCard, {}, [className])}>
-            <div className={cls.header}>
-                <Text title={t('PROFILE.TITLE')} />
-                <Button className={cls.editBtn} buttonType={ButtonType.OUTLINE}>
-                    {t('PROFILE.EDIT')}
-                </Button>
-            </div>
-            <div className={cls.data}>
-                <Input
-                    className={cls.input}
-                    value={data?.first}
-                    placeholder={t('PROFILE.YOUR_NAME')}
-                />
-                <Input
-                    className={cls.input}
-                    value={data?.lastname}
-                    placeholder={t('PROFILE.YOUR_SURNAME')}
-                />
-            </div>
+            <Input
+                className={cls.input}
+                value={data?.first}
+                placeholder={t('PROFILE.YOUR_NAME')}
+            />
+            <Input
+                className={cls.input}
+                value={data?.lastname}
+                placeholder={t('PROFILE.YOUR_SURNAME')}
+            />
         </div>
     );
 };
