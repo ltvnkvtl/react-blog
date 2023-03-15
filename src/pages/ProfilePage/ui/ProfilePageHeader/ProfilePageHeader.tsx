@@ -19,20 +19,49 @@ export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
     const { t } = useTranslation('profile');
     const dispatch = useAppDispatch();
     const readonly = useSelector(getProfileReadonly);
-    const onToggleEdit = useCallback(() => {
-        dispatch(profileActions.setReadonly(!readonly));
-    }, [dispatch, readonly]);
+
+    const onEdit = useCallback(() => {
+        dispatch(profileActions.setReadonly(false));
+    }, [dispatch]);
+
+    const onCancelEdit = useCallback(() => {
+        dispatch(profileActions.cancelEdit());
+    }, [dispatch]);
+
+    const onSave = useCallback(() => {
+        dispatch(profileActions.cancelEdit());
+    }, [dispatch]);
 
     return (
         <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
-            <Text title={t('PROFILE.TITLE')} />
-            <Button
-                className={cls.editBtn}
-                buttonType={ButtonType.OUTLINE}
-                onClick={onToggleEdit}
-            >
-                {t(readonly ? 'PROFILE.EDIT' : 'PROFILE.CANCEL_EDIT')}
-            </Button>
+            <Text className={cls.title} title={t('PROFILE.TITLE')} />
+
+            { readonly ? (
+                <Button
+                    className={cls.editBtn}
+                    buttonType={ButtonType.OUTLINE}
+                    onClick={onEdit}
+                >
+                    {t('PROFILE.EDIT')}
+                </Button>
+            ) : (
+                <>
+                    <Button
+                        className={cls.editBtn}
+                        buttonType={ButtonType.OUTLINE_DANGEROUS}
+                        onClick={onCancelEdit}
+                    >
+                        {t('PROFILE.CANCEL_EDIT')}
+                    </Button>
+                    <Button
+                        className={cls.editBtn}
+                        buttonType={ButtonType.OUTLINE}
+                        onClick={onSave}
+                    >
+                        {t('PROFILE.SAVE')}
+                    </Button>
+                </>
+            )}
         </div>
     );
 };

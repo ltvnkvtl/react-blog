@@ -8,6 +8,9 @@
       "FAILED_TO_DOWNLOAD": "Failed to download profile",
       "RELOAD_PAGE": "Please reload page"
     },
-    "CANCEL_EDIT": "Cancel edit"
+    "CANCEL_EDIT": "Cancel edit",
+    "SAVE": "Save",
+    "YOUR_AGE": "Your age",
+    "CITY": "City"
   }
 }
