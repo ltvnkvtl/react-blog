@@ -6,6 +6,7 @@ export enum ButtonType {
     CLEAR = 'clear',
     CLEAR_INVERTED = 'clearInverted',
     OUTLINE = 'outline',
+    OUTLINE_DANGEROUS = 'outlineDangerous',
     BACKGROUND = 'background',
     BACKGROUND_INVERTED = 'backgroundInverted',
 }
