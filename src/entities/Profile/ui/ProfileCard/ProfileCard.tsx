@@ -73,13 +73,13 @@ export const ProfileCard = (props: ProfileCardProps) => {
                 className={cls.input}
                 value={data?.age}
                 placeholder={t('PROFILE.YOUR_AGE')}
+                type="number"
                 readonly={readonly}
                 onChange={onChangeAge}
             />
             <Input
                 className={cls.input}
                 value={data?.city}
-                type="number"
                 placeholder={t('PROFILE.CITY')}
                 readonly={readonly}
                 onChange={onChangeCity}
