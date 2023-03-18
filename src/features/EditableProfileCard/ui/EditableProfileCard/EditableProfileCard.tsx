@@ -39,6 +39,14 @@ export const EditableProfileCard = (props: EditableProfileCardProps) => {
         dispatch(profileActions.updateProfile({ city: value || '' }));
     }, [dispatch]);
 
+    const onChangeAvatar = useCallback((value?: string) => {
+        dispatch(profileActions.updateProfile({ avatar: value || '' }));
+    }, [dispatch]);
+
+    const onChangeUsername = useCallback((value?: string) => {
+        dispatch(profileActions.updateProfile({ username: value || '' }));
+    }, [dispatch]);
+
     return (
         <div className={classNames(cls.EditableProfileCard, {}, [className])}>
             <ProfileCard
@@ -49,6 +57,8 @@ export const EditableProfileCard = (props: EditableProfileCardProps) => {
                 onChangeLastname={onChangeLastname}
                 onChangeAge={onChangeAge}
                 onChangeCity={onChangeCity}
+                onChangeAvatar={onChangeAvatar}
+                onChangeUsername={onChangeUsername}
                 readonly={readonly}
             />
         </div>
