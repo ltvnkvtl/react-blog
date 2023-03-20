@@ -4,6 +4,8 @@ import { ProfileCard } from 'entities/Profile';
 import { useCallback } from 'react';
 import { getProfileReadonly, profileActions } from 'features/EditableProfileCard';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Currency } from 'entities/Currency';
+import { Country } from 'entities/Country';
 import { getProfileForm } from '../../model/selectors/getProfileForm/getProfileForm';
 import { getProfileIsLoading } from '../../model/selectors/getProfileIsLoading/getProfileIsLoading';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
@@ -47,6 +49,14 @@ export const EditableProfileCard = (props: EditableProfileCardProps) => {
         dispatch(profileActions.updateProfile({ username: value || '' }));
     }, [dispatch]);
 
+    const onChangeCurrency = useCallback((currency: Currency) => {
+        dispatch(profileActions.updateProfile({ currency }));
+    }, [dispatch]);
+
+    const onChangeCountry = useCallback((country: Country) => {
+        dispatch(profileActions.updateProfile({ country }));
+    }, [dispatch]);
+
     return (
         <div className={classNames(cls.EditableProfileCard, {}, [className])}>
             <ProfileCard
@@ -59,6 +69,8 @@ export const EditableProfileCard = (props: EditableProfileCardProps) => {
                 onChangeCity={onChangeCity}
                 onChangeAvatar={onChangeAvatar}
                 onChangeUsername={onChangeUsername}
+                onChangeCurrency={onChangeCurrency}
+                onChangeCountry={onChangeCountry}
                 readonly={readonly}
             />
         </div>
