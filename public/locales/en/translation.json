@@ -6,6 +6,8 @@
     "LOGOUT": "Logout",
     "PAGE_NOT_FOUND": "Page not found",
     "RELOAD_PAGE": "Reload page",
+    "SELECT_COUNTRY": "Select country",
+    "SELECT_CURRENCY": "Select currency",
     "THROW_ERROR": "Throw error",
     "UNEXPECTED_ERROR": "Unexpected error"
   },

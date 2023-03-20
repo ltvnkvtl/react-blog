@@ -6,6 +6,8 @@
     "LOGOUT": "Выйти",
     "PAGE_NOT_FOUND": "Страница не найдена",
     "RELOAD_PAGE": "Перезагрузить страницу",
+    "SELECT_COUNTRY": "Укажите страну",
+    "SELECT_CURRENCY": "Укажите валюту",
     "THROW_ERROR": "Вызвать ошибку",
     "UNEXPECTED_ERROR": "Непредвиденная ошибка"
   },
