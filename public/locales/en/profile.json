@@ -6,7 +6,12 @@
     "YOUR_SURNAME": "Your surname",
     "ERRORS": {
       "FAILED_TO_DOWNLOAD": "Failed to download profile",
-      "RELOAD_PAGE": "Please reload page"
+      "RELOAD_PAGE": "Please reload page",
+      "NO_DATA": "Data not specified",
+      "SERVER_ERROR": "Server error while saving. Please try again",
+      "INCORRECT_USER_DATA": "Field 'Your name' and field 'Your surname' cannot be empty",
+      "INCORRECT_AGE": "Incorrect age",
+      "INCORRECT_CITY": "Field 'City' cannot be empty"
     },
     "CANCEL_EDIT": "Cancel edit",
     "SAVE": "Save",
