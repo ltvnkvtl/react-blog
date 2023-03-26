@@ -21,4 +21,5 @@ export interface BuildOptions {
   port: number;
   analyzeBundle: boolean;
   apiUrl: string;
+  project: 'frontend' | 'storybook' | 'jest';
 }
